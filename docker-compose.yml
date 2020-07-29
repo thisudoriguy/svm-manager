@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    container_name: woven-test
+    image: woven-test
+    restart: always
+    build: .
+    ports:
+    - '7000:7000'

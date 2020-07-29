@@ -1,0 +1,9 @@
+{
+  "name": "woven",
+  "version": "1.0.0",
+  "description": "Woven finance interview",
+  "main": "index.js",
+  "author": "udori",
+  "license": "MIT",
+  "private": true
+}
