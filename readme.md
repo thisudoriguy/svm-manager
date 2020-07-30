@@ -55,11 +55,39 @@ Example:
 
 - To run on docker, use the following command **docker-compose -f "docker-compose.yml" up -d --build** 
 
-- Navigate to http://localhost:7000/api/woven-test/v1
+- Navigate to http://localhost:7000/api/woven-test/v1/calculate
 
 ### Run Locally
 
 - Clone repo
 - Install all dependencies **yarn install**
 - Start the service **yarn run start**
+
+
+## Sample Payload
+REQUEST METHOD - POST
+`{
+  "serverType": {
+    "CPU": 2,
+    "RAM": 32,
+    "HDD": 100
+  },
+  "virtualMachine": [
+    {
+      "CPU": 1,
+      "RAM": 32,
+      "HDD": 10
+    },
+    {
+      "CPU": 1,
+      "RAM": 32,
+      "HDD": 10
+    },
+    {
+      "CPU": 2,
+      "RAM": 32,
+      "HDD": 100
+    }
+  ]
+}`
 
